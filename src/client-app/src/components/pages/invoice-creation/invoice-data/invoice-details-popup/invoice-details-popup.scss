@@ -1,0 +1,15 @@
+.invoice-details-popup-main-div {
+  overflow-y: hidden;
+
+  .dx-multiview-item.dx-item-selected {
+    height: 21.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .charge-types-main-div {
+    .grc-common-ag-grid {
+      height: auto !important;
+    }
+  }
+}

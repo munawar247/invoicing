@@ -1,0 +1,32 @@
+.total-div-main {
+  .total-div {
+    border: 1px solid;
+    border-color: #7ecdfb;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 18rem;
+    height: 12rem;
+  }
+
+  .total-cols,
+  .total-values {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-inline: 10px;
+  }
+
+  .total-div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(90, 200, 240, 0.3);
+  }
+}

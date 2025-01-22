@@ -1,0 +1,24 @@
+.shipment-details-main-div {
+  .shipment-details {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(239, 252, 255);
+    border-radius: 7px;
+    height: 70px;
+    align-items: center;
+  }
+
+  .btn-reject-all {
+    background-color: transparent;
+    border: 1px solid rgb(173, 171, 171);
+    color: rgb(70, 66, 66);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicing.Service", "Invoicing.Service\Invoicing.Service.csproj", "{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicing.Tests", "Invoicing.Tests\Invoicing.Tests.csproj", "{248D35EB-99E2-45BF-B594-1A812B550F09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicing.Tests.Functional", "Invoicing.Tests.Functional\Invoicing.Tests.Functional.csproj", "{51EEED50-52B9-4142-9D1E-29C0E34E1561}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFD48C39-D639-4F4A-8D4C-C8A42B1EDBF0}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicing.Data", "Invoicing.Data\Invoicing.Data.csproj", "{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicing.Messaging", "Invoicing.Messaging\Invoicing.Messaging.csproj", "{52548202-A5DE-448A-A678-33D99CD522AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248D35EB-99E2-45BF-B594-1A812B550F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248D35EB-99E2-45BF-B594-1A812B550F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248D35EB-99E2-45BF-B594-1A812B550F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248D35EB-99E2-45BF-B594-1A812B550F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EEED50-52B9-4142-9D1E-29C0E34E1561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EEED50-52B9-4142-9D1E-29C0E34E1561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EEED50-52B9-4142-9D1E-29C0E34E1561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EEED50-52B9-4142-9D1E-29C0E34E1561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52548202-A5DE-448A-A678-33D99CD522AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52548202-A5DE-448A-A678-33D99CD522AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52548202-A5DE-448A-A678-33D99CD522AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52548202-A5DE-448A-A678-33D99CD522AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2EB7A35-2A04-4CC2-A26E-86EC49F93F7E}
+	EndGlobalSection
+EndGlobal

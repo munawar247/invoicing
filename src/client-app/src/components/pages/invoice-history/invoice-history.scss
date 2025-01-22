@@ -1,0 +1,25 @@
+.invoice-history-main-div {
+  .invoice-history-filter-card {
+    padding: 15px;
+    background-color: #e0f1fe;
+    border-radius: 5px;
+
+    .filter-buttons {
+      .dx-box-flex.dx-box.dx-widget.dx-collection {
+        flex-direction: row !important;
+      }
+
+      .dx-layout-manager .dx-field-item:not(.dx-first-row) {
+        padding-top: 0px !important;
+      }
+
+      .dx-item.dx-box-item {
+        margin-left: 10px;
+      }
+    }
+
+    .from-to-date {
+      width: 150px;
+    }
+  }
+}

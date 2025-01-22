@@ -1,0 +1,15 @@
+.main-handling-unit-totals {
+  display: flex;
+  justify-content: center;
+
+  .handling-value-txt {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.main-handling-unit-div .grc-common-ag-grid {
+  min-height: 200px;
+  width: 100%;
+  height: auto;
+}

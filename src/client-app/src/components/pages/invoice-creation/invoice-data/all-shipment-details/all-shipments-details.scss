@@ -1,0 +1,32 @@
+.preview-shipment-details-main-div {
+  .preview-shipment-details-div {
+    overflow-y: auto !important;
+    margin-top: 0.5rem;
+    height: 12rem;
+
+    .customer-billto-div {
+      border: 1px solid;
+      border-color: #7ecdfb;
+      height: 12rem;
+
+      .customer-div {
+        border-right: #7ecdfb 1px solid;
+        text-align: left;
+        width: fit-content;
+      }
+
+      .customer-div::after {
+        content: '';
+      }
+
+      .billto-div {
+        width: fit-content;
+      }
+    }
+  }
+
+  .preview-buttons {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}

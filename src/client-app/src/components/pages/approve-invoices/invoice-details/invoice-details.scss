@@ -1,0 +1,149 @@
+.invoice-details-static-btns {
+  text-align: right;
+  bottom: 50px;
+  right: 0px;
+
+  .btn-reject {
+    background-color: transparent;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
+
+.invoice-shipment-details-main-div {
+  overflow-y: auto !important;
+  height: calc(100vh - 190px);
+  position: relative;
+  overflow-x: hidden;
+
+  .grc-bread-crumb-custom-label {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;
+    color: #1099e7;
+  }
+
+  .invoice-title {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    color: #111827;
+    font-weight: 600;
+    float: inline-end;
+  }
+
+  .plain-button {
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .from-card-body {
+    border: 1px solid;
+    border-color: #7ecdfb;
+    border-radius: 7px;
+    padding: 20px;
+    height: fit-content;
+  }
+
+  .invoice-container {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .invoice-cols,
+  .invoice-values {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-inline: 20px;
+    text-align: right;
+  }
+
+  .customer-bill-div {
+    border: #7ecdfb 1px solid;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    .customer-div {
+      border-right: #7ecdfb 1px solid;
+      text-align: left;
+      width: 50%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .billTo-div {
+      padding-left: 50px;
+      width: 50%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 5rem;
+    }
+  }
+
+  .bank-details-div {
+    border: 1px solid;
+    border-color: #7ecdfb;
+    border-radius: 7px;
+    padding: 10px;
+    height: 120px;
+    display: grid;
+  }
+
+  .payment-terms-div {
+    border: 1px solid;
+    border-color: #7ecdfb;
+    border-radius: 7px;
+    padding: 20px;
+    height: 120px;
+  }
+
+  .comments-div,
+  .ref-div {
+    padding-top: 5px;
+  }
+
+  .ref-div {
+    margin-bottom: 60px;
+  }
+
+  .btn-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .btn-div Button + Button {
+    margin-left: 10px;
+  }
+
+  .view-shipment-btn {
+    border: 1px solid #1099e7;
+    padding: 10px;
+    border-radius: 5px;
+    background: #effcff;
+  }
+
+  .approval-div {
+    margin-top: -70px;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .words-div {
+    margin-top: -2rem;
+  }
+}

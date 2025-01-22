@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xmrb/ifhS1o=",
+  "success": true,
+  "projectFilePath": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Invoicing.Messaging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\munawar\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512"
+  ],
+  "logs": []
+}

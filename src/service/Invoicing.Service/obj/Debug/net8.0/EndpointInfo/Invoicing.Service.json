@@ -1,0 +1,508 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Invoicing.Service",
+    "version": "1.0"
+  },
+  "paths": {
+    "/invoices": {
+      "post": {
+        "tags": [
+          "Invoicing.Service.Endpoints.CreateInvoiceEndPoint"
+        ],
+        "summary": "POST_invoices",
+        "description": "POST_invoices",
+        "operationId": "POST_invoices",
+        "parameters": [
+          {
+            "name": "TenantId",
+            "in": "header"
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateInvoice"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/invoices/get": {
+      "get": {
+        "tags": [
+          "Invoicing.Service.Endpoints.GetInvoicesEndpoint"
+        ],
+        "summary": "GET_invoices_get",
+        "description": "GET_invoices_get",
+        "operationId": "GET_invoices_get",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "billToId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "invoiceCreationFromDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "invoiceCreationToDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "TenantId",
+            "in": "header"
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccessorialCharge": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "charge": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Address": {
+        "type": "object",
+        "properties": {
+          "streetAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BankDetails": {
+        "type": "object",
+        "properties": {
+          "bank": {
+            "type": "string",
+            "nullable": true
+          },
+          "accountNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "branch": {
+            "type": "string",
+            "nullable": true
+          },
+          "swiftCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChargeApproval": {
+        "type": "object",
+        "properties": {
+          "shipmentId": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvalRequestDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "raisedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "reviewBy": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "reason": {
+            "type": "string",
+            "nullable": true
+          },
+          "fuelCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fuelCharge": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "freightCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "freightCharge": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "accessorials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccessorialCharge"
+            },
+            "nullable": true
+          },
+          "approvalStatus": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateInvoice": {
+        "type": "object",
+        "properties": {
+          "invoiceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "invoiceDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "account": {
+            "$ref": "#/components/schemas/LocationInfo"
+          },
+          "billTo": {
+            "$ref": "#/components/schemas/LocationInfo"
+          },
+          "consignee": {
+            "$ref": "#/components/schemas/LocationInfo"
+          },
+          "shipper": {
+            "$ref": "#/components/schemas/LocationInfo"
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "invoiceLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InvoiceLine"
+            },
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "amountDue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "discountPercentage": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "taxes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "isInvoicePosted": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "referenceNumbers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            },
+            "nullable": true
+          },
+          "bankInfo": {
+            "$ref": "#/components/schemas/BankDetails"
+          },
+          "paymentTerms": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IResult": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "InvoiceLine": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "lineNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shipmentId": {
+            "type": "string",
+            "nullable": true
+          },
+          "shipmentPickupDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "origin": {
+            "$ref": "#/components/schemas/LocationInfo"
+          },
+          "destination": {
+            "$ref": "#/components/schemas/LocationInfo"
+          },
+          "invoiceLineDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "freightCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "freightCharge": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fuelCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fuelCharge": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "totalCosts": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "totalCharges": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "accessorials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccessorialCharge"
+            },
+            "nullable": true
+          },
+          "approvals": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChargeApproval"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LocationInfo": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "careOf": {
+            "$ref": "#/components/schemas/LocationInfo"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobile": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "Reference": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "referenceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "referenceNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JSON Web Token based security",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\commands\\invoiceline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\commands\\invoiceline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\commands\\createinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\commands\\createinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\endpoints\\createinvoiceendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\endpoints\\createinvoiceendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}|Invoicing.Data\\Invoicing.Data.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.data\\domain\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}|Invoicing.Data\\Invoicing.Data.csproj|solutionrelative:invoicing.data\\domain\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\endpoints\\getinvoiceendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\endpoints\\getinvoiceendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}|Invoicing.Data\\Invoicing.Data.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.data\\projections\\invoicedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}|Invoicing.Data\\Invoicing.Data.csproj|solutionrelative:invoicing.data\\projections\\invoicedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\authorization\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\authorization\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\configuration\\availableresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\configuration\\availableresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248D35EB-99E2-45BF-B594-1A812B550F09}|Invoicing.Tests\\Invoicing.Tests.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.tests\\aggregatetests\\invoice\\invoicetestscenariosbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248D35EB-99E2-45BF-B594-1A812B550F09}|Invoicing.Tests\\Invoicing.Tests.csproj|solutionrelative:invoicing.tests\\aggregatetests\\invoice\\invoicetestscenariosbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}|Invoicing.Data\\Invoicing.Data.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.data\\domain\\events\\invoiceevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9098F1E3-BA21-41FB-B8E9-0646B99F2D5A}|Invoicing.Data\\Invoicing.Data.csproj|solutionrelative:invoicing.data\\domain\\events\\invoiceevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\mappingprofiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\mappingprofiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\authorization\\anonymousauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\authorization\\anonymousauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51EEED50-52B9-4142-9D1E-29C0E34E1561}|Invoicing.Tests.Functional\\Invoicing.Tests.Functional.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.tests.functional\\invoicetestscenarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EEED50-52B9-4142-9D1E-29C0E34E1561}|Invoicing.Tests.Functional\\Invoicing.Tests.Functional.csproj|solutionrelative:invoicing.tests.functional\\invoicetestscenarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51EEED50-52B9-4142-9D1E-29C0E34E1561}|Invoicing.Tests.Functional\\Invoicing.Tests.Functional.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.tests.functional\\fixture\\invoicingtestsfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EEED50-52B9-4142-9D1E-29C0E34E1561}|Invoicing.Tests.Functional\\Invoicing.Tests.Functional.csproj|solutionrelative:invoicing.tests.functional\\fixture\\invoicingtestsfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\chargeapproval.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\chargeapproval.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51EEED50-52B9-4142-9D1E-29C0E34E1561}|Invoicing.Tests.Functional\\Invoicing.Tests.Functional.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.tests.functional\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EEED50-52B9-4142-9D1E-29C0E34E1561}|Invoicing.Tests.Functional\\Invoicing.Tests.Functional.csproj|solutionrelative:invoicing.tests.functional\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248D35EB-99E2-45BF-B594-1A812B550F09}|Invoicing.Tests\\Invoicing.Tests.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.tests\\aggregatetests\\invoice\\invoicedetailsprojectionscenarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248D35EB-99E2-45BF-B594-1A812B550F09}|Invoicing.Tests\\Invoicing.Tests.csproj|solutionrelative:invoicing.tests\\aggregatetests\\invoice\\invoicedetailsprojectionscenarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248D35EB-99E2-45BF-B594-1A812B550F09}|Invoicing.Tests\\Invoicing.Tests.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.tests\\aggregatetests\\invoice\\invoicescenarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248D35EB-99E2-45BF-B594-1A812B550F09}|Invoicing.Tests\\Invoicing.Tests.csproj|solutionrelative:invoicing.tests\\aggregatetests\\invoice\\invoicescenarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\startup\\registermessagingsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\startup\\registermessagingsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\startup\\registermartensetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\startup\\registermartensetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\validators\\invoicelinevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\validators\\invoicelinevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\validators\\createinvoicevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\validators\\createinvoicevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.service\\handlers\\tenantactivatedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C328A16F-B9F3-46F3-B61F-DF02BB556E1F}|Invoicing.Service\\Invoicing.Service.csproj|solutionrelative:invoicing.service\\handlers\\tenantactivatedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\commands\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\commands\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\commands\\postinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\commands\\postinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\commands\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\commands\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\commands\\addinvoiceline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\commands\\addinvoiceline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\invoicestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\invoicestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|d:\\grctech\\git\\invoicing\\src\\service\\invoicing.messaging\\accessorialcharge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52548202-A5DE-448A-A678-33D99CD522AF}|Invoicing.Messaging\\Invoicing.Messaging.csproj|solutionrelative:invoicing.messaging\\accessorialcharge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateInvoiceEndpoint.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Endpoints\\CreateInvoiceEndpoint.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Endpoints\\CreateInvoiceEndpoint.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Endpoints\\CreateInvoiceEndpoint.cs",
+              "RelativeToolTip": "Invoicing.Service\\Endpoints\\CreateInvoiceEndpoint.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAhwDkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:05:05.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InvoiceDetails.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Data\\Projections\\InvoiceDetails.cs",
+              "RelativeDocumentMoniker": "Invoicing.Data\\Projections\\InvoiceDetails.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Data\\Projections\\InvoiceDetails.cs",
+              "RelativeToolTip": "Invoicing.Data\\Projections\\InvoiceDetails.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T14:41:53.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Data\\Domain\\Invoice.cs",
+              "RelativeDocumentMoniker": "Invoicing.Data\\Domain\\Invoice.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Data\\Domain\\Invoice.cs",
+              "RelativeToolTip": "Invoicing.Data\\Domain\\Invoice.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAMwHYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T06:54:32.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateInvoice.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\CreateInvoice.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Commands\\CreateInvoice.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\CreateInvoice.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Commands\\CreateInvoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:04:09.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoiceLine.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\InvoiceLine.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Commands\\InvoiceLine.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\InvoiceLine.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Commands\\InvoiceLine.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T06:55:53.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthorizationService.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Authorization\\AuthorizationService.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Authorization\\AuthorizationService.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Authorization\\AuthorizationService.cs",
+              "RelativeToolTip": "Invoicing.Service\\Authorization\\AuthorizationService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:02:14.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetInvoiceEndpoint.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Endpoints\\GetInvoiceEndpoint.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Endpoints\\GetInvoiceEndpoint.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Endpoints\\GetInvoiceEndpoint.cs",
+              "RelativeToolTip": "Invoicing.Service\\Endpoints\\GetInvoiceEndpoint.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:56:49.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AvailableResources.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Configuration\\AvailableResources.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Configuration\\AvailableResources.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Configuration\\AvailableResources.cs",
+              "RelativeToolTip": "Invoicing.Service\\Configuration\\AvailableResources.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:57:21.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InvoiceEvents.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Data\\Domain\\Events\\InvoiceEvents.cs",
+              "RelativeDocumentMoniker": "Invoicing.Data\\Domain\\Events\\InvoiceEvents.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Data\\Domain\\Events\\InvoiceEvents.cs",
+              "RelativeToolTip": "Invoicing.Data\\Domain\\Events\\InvoiceEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T14:44:05.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InvoiceTestScenariosBase.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceTestScenariosBase.cs",
+              "RelativeDocumentMoniker": "Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceTestScenariosBase.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceTestScenariosBase.cs",
+              "RelativeToolTip": "Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceTestScenariosBase.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA6wBcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:47:25.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Services\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Services\\InvoiceService.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Services\\InvoiceService.cs",
+              "RelativeToolTip": "Invoicing.Service\\Services\\InvoiceService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAArwEEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T14:41:27.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\MappingProfiles\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\MappingProfiles\\MappingProfile.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\MappingProfiles\\MappingProfile.cs",
+              "RelativeToolTip": "Invoicing.Service\\MappingProfiles\\MappingProfile.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:22:28.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\appsettings.json",
+              "RelativeDocumentMoniker": "Invoicing.Service\\appsettings.json",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\appsettings.json",
+              "RelativeToolTip": "Invoicing.Service\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-21T10:33:55.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnonymousAuthorizationHandler.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Authorization\\AnonymousAuthorizationHandler.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Authorization\\AnonymousAuthorizationHandler.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Authorization\\AnonymousAuthorizationHandler.cs",
+              "RelativeToolTip": "Invoicing.Service\\Authorization\\AnonymousAuthorizationHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:05:58.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InvoicingTestsFixture.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests.Functional\\Fixture\\InvoicingTestsFixture.cs",
+              "RelativeDocumentMoniker": "Invoicing.Tests.Functional\\Fixture\\InvoicingTestsFixture.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests.Functional\\Fixture\\InvoicingTestsFixture.cs",
+              "RelativeToolTip": "Invoicing.Tests.Functional\\Fixture\\InvoicingTestsFixture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:36:34.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InvoiceTestScenarios.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests.Functional\\InvoiceTestScenarios.cs",
+              "RelativeDocumentMoniker": "Invoicing.Tests.Functional\\InvoiceTestScenarios.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests.Functional\\InvoiceTestScenarios.cs",
+              "RelativeToolTip": "Invoicing.Tests.Functional\\InvoiceTestScenarios.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAADwv48AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T08:30:27.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChargeApproval.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\ChargeApproval.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\ChargeApproval.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\ChargeApproval.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\ChargeApproval.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:56:01.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests.Functional\\Constants.cs",
+              "RelativeDocumentMoniker": "Invoicing.Tests.Functional\\Constants.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests.Functional\\Constants.cs",
+              "RelativeToolTip": "Invoicing.Tests.Functional\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T08:21:35.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InvoiceScenarios.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceScenarios.cs",
+              "RelativeDocumentMoniker": "Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceScenarios.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceScenarios.cs",
+              "RelativeToolTip": "Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceScenarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:30:29.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InvoiceDetailsProjectionScenarios.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceDetailsProjectionScenarios.cs",
+              "RelativeDocumentMoniker": "Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceDetailsProjectionScenarios.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceDetailsProjectionScenarios.cs",
+              "RelativeToolTip": "Invoicing.Tests\\AggregateTests\\Invoice\\InvoiceDetailsProjectionScenarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAzwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:24:07.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterMessagingSetup.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Startup\\RegisterMessagingSetup.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Startup\\RegisterMessagingSetup.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Startup\\RegisterMessagingSetup.cs",
+              "RelativeToolTip": "Invoicing.Service\\Startup\\RegisterMessagingSetup.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADgvykAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:32:39.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterMartenSetup.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Startup\\RegisterMartenSetup.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Startup\\RegisterMartenSetup.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Startup\\RegisterMartenSetup.cs",
+              "RelativeToolTip": "Invoicing.Service\\Startup\\RegisterMartenSetup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:30:57.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InvoiceLineValidator.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Validators\\InvoiceLineValidator.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Validators\\InvoiceLineValidator.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Validators\\InvoiceLineValidator.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Validators\\InvoiceLineValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:29:42.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateInvoiceValidator.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Validators\\CreateInvoiceValidator.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Validators\\CreateInvoiceValidator.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Validators\\CreateInvoiceValidator.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Validators\\CreateInvoiceValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:29:26.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TenantActivatedHandler.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Handlers\\TenantActivatedHandler.cs",
+              "RelativeDocumentMoniker": "Invoicing.Service\\Handlers\\TenantActivatedHandler.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service\\Handlers\\TenantActivatedHandler.cs",
+              "RelativeToolTip": "Invoicing.Service\\Handlers\\TenantActivatedHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T07:22:22.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BankDetails.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\BankDetails.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Commands\\BankDetails.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\BankDetails.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Commands\\BankDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T06:57:17.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Reference.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\Reference.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Commands\\Reference.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\Reference.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Commands\\Reference.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T06:56:34.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PostInvoice.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\PostInvoice.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Commands\\PostInvoice.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\PostInvoice.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Commands\\PostInvoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:04:28.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "InvoiceStatus.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\InvoiceStatus.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\InvoiceStatus.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\InvoiceStatus.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\InvoiceStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:59:30.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AccessorialCharge.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\AccessorialCharge.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\AccessorialCharge.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\AccessorialCharge.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\AccessorialCharge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:56:41.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AddInvoiceLine.cs",
+              "DocumentMoniker": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\AddInvoiceLine.cs",
+              "RelativeDocumentMoniker": "Invoicing.Messaging\\Commands\\AddInvoiceLine.cs",
+              "ToolTip": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging\\Commands\\AddInvoiceLine.cs",
+              "RelativeToolTip": "Invoicing.Messaging\\Commands\\AddInvoiceLine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:48:25.985Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

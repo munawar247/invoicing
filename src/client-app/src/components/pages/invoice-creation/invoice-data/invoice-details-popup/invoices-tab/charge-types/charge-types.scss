@@ -1,0 +1,27 @@
+.charge-details-rate-tab {
+  .ag-details-row {
+    padding: 0px 1px 0px 0px !important;
+    .ag-header.ag-pivot-off.ag-header-allow-overflow {
+      display: none !important;
+    }
+    .ag-root-wrapper.ag-ltr.ag-layout-normal {
+      border-radius: 0px !important;
+      border: none !important;
+    }
+    .ag-row-even,
+    .ag-row-odd {
+      .ag-cell:nth-child(1) {
+        padding-left: 25px !important;
+      }
+    }
+  }
+  .ag-paging-panel {
+    display: none !important;
+  }
+  .ag-side-bar {
+    display: none !important;
+  }
+  .grc-common-ag-grid {
+    height: 300px !important;
+  }
+}

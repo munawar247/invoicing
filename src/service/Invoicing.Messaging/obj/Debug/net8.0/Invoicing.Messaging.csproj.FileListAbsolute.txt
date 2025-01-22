@@ -1,0 +1,13 @@
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\bin\Debug\net8.0\Invoicing.Messaging.deps.json
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\bin\Debug\net8.0\Invoicing.Messaging.dll
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\bin\Debug\net8.0\Invoicing.Messaging.pdb
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.csproj.AssemblyReference.cache
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.AssemblyInfoInputs.cache
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.AssemblyInfo.cs
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.csproj.CoreCompileInputs.cache
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.sourcelink.json
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.dll
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\refint\Invoicing.Messaging.dll
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\Invoicing.Messaging.pdb
+D:\GRCTech\GIT\Invoicing\src\service\Invoicing.Messaging\obj\Debug\net8.0\ref\Invoicing.Messaging.dll

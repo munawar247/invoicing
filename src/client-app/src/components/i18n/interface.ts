@@ -1,0 +1,159 @@
+export default interface I18N {
+  //Invoice Creation - screen
+  InvoiceCreation: string;
+  Account: string;
+  Location: string;
+  Country: string;
+  DateRange: string;
+  FromDate: string;
+  ToDate: string;
+  Clear: string;
+  ShowShipments: string;
+  ReadyToInvoice: string;
+  NotReadyToInvoice: string;
+  OnHoldInvoices: string;
+  OnHold: string;
+  Preview: string;
+  TotalNoOfShipments: string;
+  Detailed: string;
+  Summary: string;
+  Select: string;
+  ApproveInvoices: string;
+  ApproveInvoice: string;
+  RejectInvoice: string;
+  Details: string;
+  Invoices: string;
+  ApproverEmail: string;
+  Approver: string;
+  Email: string;
+  MoveToReadyInvoice: string;
+  MoveToHold: string;
+  Reason: string;
+  OnHoldUntil: string;
+  Move: string;
+  ShowInvoices: string;
+  ShpCreationFromDate: string;
+  ShpCreationToDate: string;
+  NoteRequired: string;
+
+  //Approve Invoice - Screen
+  Invoice: string;
+  InvoiceNumber: string;
+  InvoiceDate: string;
+  DueDate: string;
+  TotalDue: string;
+  Customer: string;
+  BankDetails: string;
+  BillTo: string;
+  BankName: string;
+  BranchName: string;
+  AccountNo: string;
+  SwiftCode: string;
+  Comments: string;
+  Thanks: string;
+  Reference: string;
+  ChargeContract: string;
+  Charge: string;
+  Fuel: string;
+  Accessorial: string;
+  SubTotal: string;
+  Discount: string;
+  Taxes: string;
+  Total: string;
+  SentForApprovalOn: string;
+  By: string;
+  TotalDueWords: string;
+  ViewShipments: string;
+  PaymentTerms: string;
+  From: string;
+  ShipmentDateRange: string;
+  NoOfPages: string;
+  NoOfExceptions: string;
+  TotalShipments: string;
+  ShipmentsOnInvoice: string;
+  AllShipments: string;
+  RejectAllExceptions: string;
+  ApproveAllExceptions: string;
+  RequestedBy: string;
+  NoOfCorrections: string;
+  TotalAmount: string;
+  ShipmentId: string;
+  InvoiceNo: string;
+  AccountName: string;
+  RequestDate: string;
+  NoOfShipments: string;
+
+  //Invoice History
+  InvoiceHistory: string;
+  InvoiceSentDate: string;
+  InvoiceDueDate: string;
+
+  //InvoiceDetails
+  Origin: string;
+  BillToDetails: string;
+  Destination: string;
+  CustomerDetails: string;
+  PickUpReadyDateTime: string;
+  PickUpCloseDateTime: string;
+  DeliveryReadyDateTime: string;
+  DeliveryCloseDateTime: string;
+  Mode: string;
+  HandlingUnitDetails: string;
+  TotalQuantity: string;
+  TotalWeight: string;
+  ReferencesAndDocuments: string;
+  ProductDetails: string;
+  ShipperDetails: string;
+  ConsigneeDetails: string;
+  ReasonCode: string;
+  WriteHere: string;
+  HUType: string;
+  Qty: string;
+  Dimensions: string;
+  Weight: string;
+  HUDescription: string;
+  Type: string;
+  Name: string;
+  ProductNo: string;
+  InnerPackCode: string;
+  OuterPackCode: string;
+  ProductDescription: string;
+  ReferenceType: string;
+  ReferenceNo: string;
+  UploadDocumentPicture: string;
+  Description: string;
+  NMFC: string;
+  NMFCclass: string;
+  Hazmat: string;
+  NonStackable: string;
+  Cancel: string;
+  Save: string;
+
+  //ReadyToInvoice
+  ShpID: string;
+  ShipmentDate: string;
+  ShpCreationDate: string;
+
+  //NotReadyToInvoice
+  ShipmentNo: string;
+  ExceptionReason: string;
+  CreatedDate: string;
+  Actions: string;
+
+  //Charge Types
+  ChargeType: string;
+  Costs: string;
+  ShipmentLoadingFailed: string;
+
+  //Common
+  Refresh: string;
+  Export: string;
+  EmptySearchMessage: string;
+  DoNotSend: string;
+  Send: string;
+  SendForApproval: string;
+  GenerateInvoice: string;
+  To: string;
+  ToDateShouldBeGreaterThanFromDate: string;
+  FromDateShouldBeLessThanToDate: string;
+}

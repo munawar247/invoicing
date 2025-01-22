@@ -1,0 +1,23 @@
+.invoice-locations-main-div {
+  margin-bottom: 10px;
+  .shipper-consignee-div {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+
+    .shipper-div {
+      border-right: #b0b0b0 1px solid;
+      text-align: left;
+      width: 50%;
+    }
+
+    .consignee-div {
+      text-align: left;
+      width: 50%;
+    }
+  }
+
+  .shipper-consignee-background-div {
+    background-color: #daedf9;
+  }
+}

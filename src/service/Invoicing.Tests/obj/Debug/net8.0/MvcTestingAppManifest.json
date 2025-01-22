@@ -1,0 +1,5 @@
+{
+  "Invoicing.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Data",
+  "Invoicing.Messaging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Messaging",
+  "Invoicing.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\GRCTech\\GIT\\Invoicing\\src\\service\\Invoicing.Service"
+}
