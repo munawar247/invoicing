@@ -1,54 +1,83 @@
-﻿using Invoicing.Data.Domain;
-using Invoicing.Data.Domain.Events;
+﻿using Invoicing.Data.Domain.Events;
 using Invoicing.Data.Projections;
 using Invoicing.Messaging;
 using Kekiri.Xunit;
 using Marten.Events;
+using Marten.Metadata;
 
 namespace Invoicing.Tests.AggregateTests.Invoice;
 
 public class InvoiceTestScenariosBase : Scenarios
 {
-    private const string TenantId = "12ae12a3-95b8-41e1-832d-d6f0ed358f95";
+    private const string _tenantId = "12ae12a3-95b8-41e1-832d-d6f0ed358f95";
     private Data.Domain.Invoice _invoice;
     private Data.Domain.Invoice.InvoiceLine _invoiceLine;
     private DateTime _sentDate;
     private double _amountPaid;
+    protected InvoiceDetailsProjection? _sut;
+    protected InvoiceCreated? _createdEvent;
+    protected InvoiceDetails? _result;
 
-    public void We_have_valid_invoice_data()
+    public void We_have_invoice_details_projection()
     {
+        Console.WriteLine("Initializing InvoiceDetailsProjection...");
+        _sut = new InvoiceDetailsProjection();
+        Console.WriteLine("InvoiceDetailsProjection initialized.");
+    }
+    protected void We_have_invoice_created_event()
+    {
+        Console.WriteLine("Creating InvoiceCreated event...");
         // Arrange
-        var account = CreateSampleLocationInfo("Account");
-        var billTo = CreateSampleLocationInfo("BillTo");
-        var consignee = CreateSampleLocationInfo("Consignee");
-        var shipper = CreateSampleLocationInfo("Shipper");
+       // var account = CreateSampleLocationInfo("Account");
+        //var billTo = CreateSampleLocationInfo("BillTo");
+
         var createDate = DateTime.UtcNow;
         var currency = "USD";
+        var discountPercentage = 0.0;
+        var taxes = 0.0;
+        var references = new List<Data.Domain.Invoice.Reference>();
+        var bankInfo = new Data.Domain.Invoice.BankDetails();
+        var paymentTerms = "Net 30";
 
-        _invoice = new Data.Domain.Invoice("T121",account, billTo, consignee, shipper, createDate, currency);
+        _createdEvent = new InvoiceCreated("T3343121",
+            new LocationInfo(), new LocationInfo(),DateTime.UtcNow, currency, discountPercentage,
+            taxes,  bankInfo, paymentTerms, InvoiceStatus.Draft, references);
+        Console.WriteLine("InvoiceCreated event created.");
     }
 
-    public void We_create_an_invoice()
+    public void We_project_the_invoice_details()
     {
-        // Act
-        // Invoice is already created in the Given step
+        Console.WriteLine("Projecting invoice details...");
+        IEvent<InvoiceCreated> eventWrapper = new CustomIEvent<InvoiceCreated>(_createdEvent!, _tenantId.ToString());
+        _result = _sut!.Create(eventWrapper);
+        Console.WriteLine("Invoice details projected.");
     }
 
-    public void The_invoice_should_be_initialized_correctly()
+    public void The_invoice_details_should_be_projected_correctly()
     {
+        Console.WriteLine("Checking if the invoice details were projected corect");
         // Assert
-        Assert.NotNull(_invoice);
-        Assert.Equal("Account", _invoice.Account.Name);
-        Assert.Equal("BillTo", _invoice.BillTo.Name);
-        Assert.Equal("Consignee", _invoice.Consignee.Name);
-        Assert.Equal("Shipper", _invoice.Shipper.Name);
-        Assert.Equal(InvoiceStatus.Draft, _invoice.Status);
+        Assert.NotNull(_result);
+        Assert.Equal(_createdEvent!.InvoiceId, _result!.Id);
+        Assert.Equal(_createdEvent.Account, _result.Account);
+        Assert.Equal(_createdEvent.BillTo, _result.BillTo);
+        Assert.Equal(_createdEvent.CreateDate, _result.CreateDate);
+        Assert.Equal(_createdEvent.Currency, _result.Currency);
+        Assert.Equal(_createdEvent.DiscountPercentage, _result.DiscountPercentage);
+        Assert.Equal(_createdEvent.Taxes, _result.Taxes);
+        Assert.Equal(_createdEvent.BankInfo, _result.BankInfo);
+        Assert.Equal(_createdEvent.PaymentTerms, _result.PaymentTerms);
+        Assert.Equal(_createdEvent.Status, _result.Status);
+        Assert.Equal(_createdEvent.References, _result.ReferenceNumber);
+        Console.WriteLine("Invoice details projection check complete.");
     }
 
-    public void We_have_a_created_invoice()
-    {
-        We_have_valid_invoice_data();
-    }
+
+
+
+
+
+   
 
     public void We_have_valid_invoice_line_data()
     {

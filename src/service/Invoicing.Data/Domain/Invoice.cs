@@ -10,33 +10,37 @@ public class Invoice : AggregateBase<string>
     {
         // Do not use this constructor - it is only for serialization purpose
     }
-    public Invoice(string Id, LocationInfo account,
-        LocationInfo billTo, LocationInfo consignee,
-        LocationInfo shipper, DateTime createDate,
-        string currency) : base(Guid.NewGuid().ToString())
+    public Invoice(string id, LocationInfo account,
+        LocationInfo billTo,
+        string? currency,
+        double ? discountPercentage,
+        double? taxes,
+        List<Invoice.Reference>? references,
+        BankDetails? bankInfo,
+        string? paymentTerms
+        ) : base(Guid.NewGuid().ToString())
     {
-        ApplyChange(new InvoiceCreated(Id,
-            account, billTo, consignee,
-            shipper, createDate, currency,
-            InvoiceStatus.Draft)
+        ApplyChange(new InvoiceCreated(id,
+            account, billTo, DateTime.UtcNow,  currency,
+            discountPercentage, taxes, bankInfo, paymentTerms, InvoiceStatus.Draft,
+            references ?? new()
+            )
         );
     }
-    public LocationInfo Account { get;  set; }
-    public LocationInfo BillTo { get;  set; }
-    public LocationInfo Consignee { get;  set; }
-    public LocationInfo Shipper { get;  set; }
+    public  LocationInfo Account { get;  set; }
+    public  LocationInfo BillTo { get;  set; }
     public DateTime CreateDate { get;  set; }
     public DateTime SentDate { get;  set; }
     public DateTime DueDate { get;  set; }
     public List<InvoiceLine> ListInvoiceLines { get;  set; } = new();
     public double? Amount { get;  set; }
     public double? AmountDue { get;  set; }
-    public string Currency { get;  set; }
+    public string? Currency { get;  set; }
     public double? DiscountPercentage { get;  set; }
     public double? Taxes { get;  set; }
     public bool IsInvoicePosted { get;  set; }
     public InvoiceStatus Status { get;  set; }
-    public List<Reference> ReferenceNumber { get;  set; } = new();
+    public List<Reference>? ReferenceNumbers { get;  set; } = new();
     public BankDetails BankInfo { get;  set; }
     public string PaymentTerms { get;  set; }
 
@@ -66,11 +70,16 @@ public class Invoice : AggregateBase<string>
         Id = e.InvoiceId;
         Account = e.Account;
         BillTo = e.BillTo;
-        Consignee = e.Consignee;
-        Shipper = e.Shipper;
         CreateDate = e.CreateDate;
-        Currency = e.Currency;
-        Status = e.Status;
+        Currency = e.Currency ?? string.Empty;
+        DiscountPercentage = e.DiscountPercentage;
+        Taxes = e.Taxes;
+        BankInfo = e.BankInfo ?? new();
+        PaymentTerms = e.PaymentTerms ?? string.Empty;
+        ReferenceNumbers = e.References;
+        Status = e.Status ?? InvoiceStatus.Draft; // Default status
+        Amount = 0.0; // If payment done it should be updated
+        IsInvoicePosted = false;
     }
 
     public void Apply(InvoiceLineAdded e)
@@ -105,10 +114,10 @@ public class Invoice : AggregateBase<string>
     public void Apply(InvoicePaid e)
     {
         AmountDue -= e.AmountPaid;
+        Amount += e.AmountPaid;
+
         if (AmountDue <= 0)
-        {
             Status = InvoiceStatus.Paid;
-        }
     }
 
     public class InvoiceLine

@@ -1,6 +1,4 @@
-﻿using Invoicing.Service.Services;
-
-namespace Invoicing.Service.Startup
+﻿namespace Invoicing.Service.Startup
 {
     public static class ServiceSetup
     {
@@ -9,7 +7,7 @@ namespace Invoicing.Service.Startup
             services.AddScoped<SecurityJwtEvents>();
             //services.AddControllers();
             services.AddEndpointsApiExplorer();
-            services.AddScoped<IInvoiceService, InvoiceService>();
+            //services.AddScoped<IInvoiceService, InvoiceService>();
             return services;
         }
     }

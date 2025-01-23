@@ -8,9 +8,9 @@ namespace Invoicing.Messaging.Commands
 {
     public class BankDetails
     {
-        public string Bank { get; set; }
-        public string AccountNumber { get; set; }
-        public string Branch { get; set; }
-        public string SwiftCode { get; set; }
+        public string Bank { get; set; } = string.Empty;
+        public string AccountNumber { get; set; } = string.Empty;
+        public string Branch { get; set; } = string.Empty;
+        public string SwiftCode { get; set; } = string.Empty;
     }
 }

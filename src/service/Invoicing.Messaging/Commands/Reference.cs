@@ -8,8 +8,8 @@ namespace Invoicing.Messaging.Commands
 {
     public class Reference
     {
-        public string Id { get; set; }
-        public string ReferenceType { get; set; }
-        public string ReferenceNumber { get; set; }
+        public string Id { get; set; } = string.Empty;
+        public string ReferenceType { get; set; } = string.Empty;
+        public string ReferenceNumber { get; set; } = string.Empty;
     }
 }

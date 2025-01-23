@@ -40,11 +40,14 @@ public class InvoiceDetailsProjection : SingleStreamProjection<InvoiceDetails>
             Id = data.InvoiceId,
             Account = data.Account,
             BillTo = data.BillTo,
-            Consignee = data.Consignee,
-            Shipper = data.Shipper,
             CreateDate = data.CreateDate,
-            Currency = data.Currency,
-            Status = data.Status
+            Currency = data.Currency ?? string.Empty,
+            Status = data.Status ?? InvoiceStatus.Draft,
+            DiscountPercentage = data.DiscountPercentage,
+            Taxes = data.Taxes,
+            ReferenceNumber = data.References,
+            BankInfo = data.BankInfo,
+            PaymentTerms = data.PaymentTerms
         };
     }
 

@@ -7,15 +7,18 @@ namespace Invoicing.Messaging.Validators
     {
         public CreateInvoiceValidator()
         {
-            RuleFor(x => x.InvoiceId)
-               .NotEmpty().WithMessage("InvoiceId cannot be null or empty.");
+            RuleFor(invoice => invoice.Account.Id)
+                .NotEmpty().WithMessage("Account ID is required.");
+            RuleFor(invoice => invoice.BillTo.Id)
+                .NotEmpty().WithMessage("BillTo ID is required.");
 
-            RuleFor(x => x.InvoiceDate)
-                .NotEmpty().WithMessage("Invoicedate must not be empty.")
-                .Must(BeAValidDate)
-                .WithMessage("Invoicedate must be a valid date.");
-
-          
+            RuleFor(invoice => invoice.InvoiceLines)
+                .NotEmpty().WithMessage("Invoice must have at least one invoice line.")
+                .ForEach(line =>
+                {
+                    line.NotNull().WithMessage("Invoice line cannot be null.");
+                    line.SetValidator(new InvoiceLineValidator());
+                });
         }
 
         private static bool BeAValidDate(DateTime date)
@@ -25,7 +28,7 @@ namespace Invoicing.Messaging.Validators
 
         private static bool BeAValidGuid(string id)
         {
-            return id != string.Empty;
+            return Guid.TryParse(id, out _);
         }
     }
 }

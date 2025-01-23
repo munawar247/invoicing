@@ -8,7 +8,7 @@ namespace Invoicing.Messaging
 {
     public class AccessorialCharge
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public double Cost { get; set; }
         public double Charge { get; set; }
     }

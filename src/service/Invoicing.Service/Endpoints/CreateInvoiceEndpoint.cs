@@ -62,13 +62,14 @@ public class CreateInvoiceEndPoint
     {
         logger.LogDebug("Generating invoice '{InvoiceId}'.", message.InvoiceId);
 
-        var invoice = new Invoice(message.InvoiceId,
+        var invoice = new Invoice(message.InvoiceId?? string.Empty,
             message.Account,
             message.BillTo,
-            message.Consignee,
-            message.Shipper,
-            message.InvoiceDate,
-            message.Currency);
+            message.Currency,
+            message.DiscountPercentage,
+            message.Taxes,
+            mapper.Map<List<Invoice.Reference>>(message.ReferenceNumbers),
+            mapper.Map<Invoice.BankDetails>(message.BankInfo), message.PaymentTerms);
         double totalAmount = 0; int lineNumber = 0;
 
         foreach (var lineItem in message.InvoiceLines)
@@ -81,26 +82,26 @@ public class CreateInvoiceEndPoint
                 ShipmentPickupDate = lineItem.ShipmentPickupDate,
                 Origin = lineItem.Origin,
                 Destination = lineItem.Destination,
-                InvoiceLineDate = message.InvoiceDate,
+                InvoiceLineDate = invoice.CreateDate,
                 FreightCharge = lineItem.FreightCharge,
                 FreightCost = lineItem.FreightCost,
                 FuelCharge = lineItem.FuelCharge,
                 FuelCost = lineItem.FuelCost,
                 TotalCharges = lineItem.FreightCharge + lineItem.FuelCharge
-                                                      + lineItem.Accessorials?.Sum(a=>a.Charge) ?? 0,
+                                                      + lineItem.Accessorials.Sum(a=>a.Charge) ?? 0,
                 TotalCosts = lineItem.FreightCost + lineItem.FuelCost
-                                                      + lineItem.Accessorials?.Sum(a => a.Cost) ?? 0,
+                                                      + lineItem.Accessorials.Sum(a => a.Cost) ?? 0,
                 Accessorials = lineItem.Accessorials
             };
             double lineTotal = invoiceLine.TotalCharges ?? 0;
-            lineTotal += invoiceLine.Accessorials?.Sum(a => a.Charge) ?? 0;
+            lineTotal += invoiceLine.Accessorials.Sum(a => a.Charge);
 
             totalAmount += lineTotal;
             invoice.AddInvoiceLine(invoiceLine);
         }
 
-        invoice.Amount = totalAmount;
-
+       
+        invoice.AmountDue = totalAmount;
         documentSession.Events.StartStream<Invoice>(invoice.Id, invoice.GetUncommittedChanges(true));
         await documentSession.SaveChangesAsync();
 

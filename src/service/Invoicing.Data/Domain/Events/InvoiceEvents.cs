@@ -6,11 +6,14 @@ public record InvoiceCreated(
     string InvoiceId,
     LocationInfo Account,
     LocationInfo BillTo,
-    LocationInfo Consignee,
-    LocationInfo Shipper,
     DateTime CreateDate,
-    string Currency,
-    InvoiceStatus Status
+    string? Currency,
+    double? DiscountPercentage,
+    double? Taxes,
+    Invoice.BankDetails? BankInfo,
+    string? PaymentTerms,
+    InvoiceStatus? Status,
+    List<Invoice.Reference> References
 );
 
 public record InvoiceLineAdded(
